@@ -1,93 +1,57 @@
-Berikut versi **README kamu yang sudah dilengkapi (tanpa mengubah struktur besar)**, hanya menambahkan bagian yang kurang: **dosen, peserta, dan perapihan minor agar lebih “A+ kampus / engineering ready”**.
-
----
-
-# ✅ UPDATED FINAL README
-
-```markdown
 # Traffic Light Simulation System
 
-[![C++](https://img.shields.io/badge/C%2B%2B-17-blue?logo=cplusplus&logoColor=white)](https://en.cppreference.com/w/cpp/17)
-[![Status](https://img.shields.io/badge/status-completed-brightgreen)](.)
-[![License](https://img.shields.io/badge/license-educational-lightgrey)](.)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-informational)](.)
+![C++](https://img.shields.io/badge/C++-17-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![Status](https://img.shields.io/badge/status-completed-brightgreen?style=flat)
+![License](https://img.shields.io/badge/license-educational-lightgrey?style=flat)
+![Platform](https://img.shields.io/badge/platform-Windows%20|%20Linux%20|%20macOS-0078D6?style=flat)
 
 ---
 
-## Overview
+## 📌 Overview
 
-A console-based traffic light simulation system built using C++ to demonstrate structured programming and basic system modeling in real-world scenarios.
+A console-based traffic light simulation system built using C++ to demonstrate structured programming and system modeling.
 
 The system simulates a cyclic traffic light controller with three states: **Red**, **Yellow**, and **Green**.
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
-- Implement a sequential control system in C++
+- Implement sequential control system in C++
 - Simulate real-world traffic light behavior using state machine design
 - Practice structured and object-oriented programming (OOP)
 - Use Git & GitHub workflow properly
-- Build a clean, engineering-style project structure
+- Build a clean engineering-style project structure
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
-The system follows a **deterministic finite state machine** with a cyclic loop:
-
-```
-
-RED (STOP) → YELLOW (PREPARE) → GREEN (GO) → back to RED
+The system follows a simple cyclic state machine:
 
 ```
-
-Each state outputs a message and holds for a fixed delay before transitioning to the next.
+RED (STOP) → YELLOW (PREPARE) → GREEN (GO) → LOOP
+```
 
 ---
 
-## Flowchart
+## 📊 Flowchart
 
-> See `assets/flowchart.png` for the exported diagram.
+Flowchart sistem traffic light:
 
-```
-
-┌─────────────────────────────────┐
-│              START              │
-└────────────────┬────────────────┘
-│
-┌────────────────▼────────────────┐
-│           INIT SYSTEM           │
-│   Instantiate TrafficLight obj  │
-└────────────────┬────────────────┘
-│
-┌────────▼────────┐
-│   STATE: RED    │
-│  Output: STOP   │
-│    Wait: 2s     │
-└────────┬────────┘
-│
-┌────────▼────────┐
-│  STATE: YELLOW  │
-│ Output: PREPARE │
-│    Wait: 1s     │
-└────────┬────────┘
-│
-┌────────▼────────┐
-│  STATE: GREEN   │
-│   Output: GO    │
-│    Wait: 2s     │
-└────────┬────────┘
-│
-┌────────▼────────┐
-│ Loop continues   │
-└─────────────────┘
-
-````
+![Traffic Light Flowchart](assets/traffic_light_flowchart.svg)
 
 ---
 
-## Implementation (C++)
+## 🎞️ Simulation Demo
+
+Simulasi program console:
+
+![Traffic Light Simulation](assets/traffic-light.gif)
+
+---
+
+## 💻 Implementation (C++)
 
 ```cpp
 #include <iostream>
@@ -113,7 +77,7 @@ public:
 
     void setYellow() {
         state = "YELLOW";
-        cout << "[YELLOW] WARNING - PREPARE" << endl;
+        cout << "[YELLOW] PREPARE" << endl;
         delay(1);
     }
 
@@ -137,17 +101,17 @@ int main() {
     system.run();
     return 0;
 }
-````
+```
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 traffic-light-system/
 │
 ├── assets/
-│   ├── flowchart.png
+│   ├── traffic_light_flowchart.svg
 │   └── traffic-light.gif
 │
 ├── src/
@@ -159,7 +123,7 @@ traffic-light-system/
 
 ---
 
-## Build & Run
+## ⚙️ Build & Run
 
 ### Compile
 
@@ -181,62 +145,43 @@ traffic_light.exe
 
 ---
 
-## Engineering Notes
-
-* Uses a simple **state machine** concept with three states
-* Implements **infinite loop cycle control**
-* Modular class-based design following **OOP principles**
-* Timing simulation using C++17 `<chrono>` and `<thread>`
-
----
-
-## Learning Outcomes
-
-* State-based system modeling
-* Real-time simulation logic
-* Clean code structuring and encapsulation
-* GitHub project workflow
-* Basic embedded/control system concept simulation
-
----
-
 ## 👨‍🏫 Lecturers
 
-* Dr. Darmawan, S.T., M.Sc
-* Amirul Luthfi, S.T., M.T
+| No | Name |
+|----|------|
+| 1  | Dr. Darmawan, S.T., M.Sc |
+| 2  | Amirul Luthfi, S.T., M.T |
 
 ---
 
 ## 👥 Group Members
 
-* Ahmad Adzani Gibran (2510953018)
-* Faruq Habibi (2510953014)
-* Rangga Pramudya (2510953038)
-* Nabila Nasywa Putri (2510953030)
+| No | Name | NIM |
+|----|------|-----|
+| 1  | Ahmad Adzani Gibran  | 2510953018 |
+| 2  | Faruq Habibi         | 2510953014 |
+| 3  | Rangga Pramudya      | 2510953038 |
+| 4  | Nabila Nasywa Putri  | 2510953030 |
 
 ---
 
-## Conclusion
+## 🧠 Learning Outcomes
 
-This project demonstrates a clean engineering approach to simulating a traffic light system using C++. It introduces fundamental concepts used in real-world control systems and embedded software architecture design.
-
----
-
-## Author
-
-**Student Project — Pemrograman 2**
-GitHub: [https://github.com/username](https://github.com/username)
-
-```
+- State machine implementation in C++
+- Real-time simulation logic using `<chrono>` and `<thread>`
+- Clean OOP design and encapsulation
+- Git & GitHub workflow
+- System modeling basics
 
 ---
 
-# 🔥 Yang sudah ditambahkan (tanpa mengubah struktur kamu)
+## 🏁 Conclusion
 
-✔ Nama dosen  
-✔ Nama semua peserta  
-✔ Perapihan kecil flowchart (lebih clean)  
-✔ Tetap mempertahankan gaya engineering  
-✔ Tidak merusak struktur awal kamu  
+This project demonstrates a structured engineering approach to simulating a traffic light system using C++. It serves as a foundation for understanding control systems and software design principles.
 
 ---
+
+## 👨‍💻 Author
+
+**Student Project — Pemrograman 2**  
+GitHub: [https://github.com/rannymphaea](https://github.com/rannymphaea)
