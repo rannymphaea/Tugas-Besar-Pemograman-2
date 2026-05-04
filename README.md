@@ -219,3 +219,20 @@ The extended object-oriented design provides a foundation for more advanced syst
 ````
 
 ---
+flowchart TD
+    A[Start Program] --> B[Initialize Traffic Light System]
+
+    B --> C[Set State: Red Light]
+    C --> D[Display RED Light Output]
+    D --> E[Wait (Delay Time)]
+
+    E --> F[Set State: Yellow Light]
+    F --> G[Display YELLOW Light Output]
+    G --> H[Wait (Delay Time)]
+
+    H --> I[Set State: Green Light]
+    I --> J[Display GREEN Light Output]
+    J --> K[Wait (Delay Time)]
+
+    K --> L[Loop Back]
+    L --> C
