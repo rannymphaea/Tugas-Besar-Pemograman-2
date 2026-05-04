@@ -1,7 +1,3 @@
-Baik. Masalahnya biasanya karena format Markdown terlalu “ramai” (garis, emoji, simbol, dan struktur terlalu padat). Berikut versi **README yang lebih clean, akademik, dan rapi untuk GitHub** tanpa berlebihan simbol.
-
-Silakan **replace seluruh README.md** dengan ini:
-
 ```markdown id="clean_final_readme"
 # Traffic Light Simulation System (C++)
 
