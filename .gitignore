@@ -1,8 +1,18 @@
+# VS Code settings
 .vscode/
+
+# Build folders
 build/
 output/
 
+# Compiled files
 *.exe
 *.out
 *.o
 *.obj
+
+# VS Code task config
+tasks.json
+
+# Optional project folder
+tugas/
