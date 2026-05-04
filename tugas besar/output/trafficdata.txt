@@ -1,0 +1,54 @@
+		    Speed up from 30km/h
+NOCE-6126
+Mon May 04 17:27:19 2026
+100
+Blue
+
+HBEG-2602
+Mon May 04 17:27:27 2026
+0
+Purple
+		    Speed up from 30km/h
+PNCG-7892
+Mon May 04 17:27:35 2026
+1100
+Aqua
+		    Speed up from 30km/h
+NTIU-1427
+Mon May 04 17:27:43 2026
+100
+Aqua
+		    Speed up from 30km/h
+CSUO-0170
+Mon May 04 17:27:47 2026
+1100
+Gray
+		    Speed up from 30km/h
+IGLN-6346
+Mon May 04 17:27:52 2026
+1100
+Yellow
+		    Speed up from 30km/h
+SBYC-8074
+Mon May 04 17:27:56 2026
+1100
+Red
+
+ran
+12.22
+0
+red
+		    Speed exceeded 30 km/h  (Detected: 43 km/h)
+ZEHD-6112
+Mon May 04 17:47:49 2026
+100
+Gray
+
+
+			  *** Unidentified Vehicle ***
+		    ________________________________________
+
+XIML-1393
+Mon May 04 18:08:27 2026
+1000
+Blue
