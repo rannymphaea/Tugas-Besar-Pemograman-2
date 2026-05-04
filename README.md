@@ -1,66 +1,160 @@
-```markdown id="clean_final_readme"
+````markdown id="engineer_final_full"
 # Traffic Light Simulation System (C++)
 
 ## Course: Pemrograman 2
 
-This project is a group assignment for the Pemrograman 2 course. It demonstrates a simple simulation of a traffic light system using the C++ programming language.
+This project is a group assignment for the Pemrograman 2 course. It implements a console-based traffic light simulation using C++ to demonstrate structured programming concepts, sequential logic, and real-world system modeling.
 
 ---
 
-## Project Description
+## 1. Project Background
 
-This program simulates the basic behavior of a traffic light system at an intersection. It models the sequence of red, yellow, and green signals in a continuous loop.
+Traffic light systems are essential components in transportation infrastructure. They regulate vehicle flow at intersections to ensure safety and efficiency.
 
-The simulation is designed to represent how traffic lights regulate vehicle movement in real-world conditions using simple programming logic.
+This project simulates a simplified version of a traffic light system using a console-based program. The simulation represents real-world behavior through sequential signal switching.
 
 ---
 
-## Objectives
+## 2. Objectives
 
 The objectives of this project are:
 
 - To simulate a traffic light system using C++
-- To apply basic programming concepts such as loops and conditions
-- To understand sequential program execution
-- To develop teamwork in software development
-- To practice version control using Git and GitHub
+- To apply structured programming concepts (sequence, selection, iteration)
+- To understand real-world system modeling
+- To improve algorithmic thinking and problem-solving skills
+- To develop teamwork and collaboration in software development
+- To use Git and GitHub for version control
 
 ---
 
-## System Features
+## 3. System Overview
 
-### Traffic Light Simulation
-The system includes three states:
+The system simulates three main traffic light states:
 
-- Red light: vehicles must stop
-- Yellow light: warning transition
-- Green light: vehicles may proceed
+- Red Light: Vehicles must stop  
+- Yellow Light: Transition / warning phase  
+- Green Light: Vehicles may proceed  
+
+The system runs continuously in a loop to mimic real traffic behavior.
+
+---
+
+## 4. System Architecture
 
 ### Program Flow
-The sequence follows:
 
-1. Red light
-2. Yellow light
-3. Green light
-4. Repeat continuously
-
-### Execution
-The program runs in the console and uses delays to simulate real-time traffic behavior.
-
----
-
-## Technology Used
-
-- C++
-- Visual Studio Code
-- GCC / MinGW
-- Git and GitHub
+1. Initialize system  
+2. Set state to RED  
+3. Wait for duration  
+4. Set state to YELLOW  
+5. Wait for duration  
+6. Set state to GREEN  
+7. Wait for duration  
+8. Repeat cycle  
 
 ---
 
-## Project Structure
+## 5. Flowchart (System Design)
 
+```mermaid id="flow_final"
+flowchart TD
+    A[Start Program] --> B[Initialize System]
+
+    B --> C[RED Light ON]
+    C --> D[Display: STOP]
+    D --> E[Delay]
+
+    E --> F[YELLOW Light ON]
+    F --> G[Display: WARNING]
+    G --> H[Delay]
+
+    H --> I[GREEN Light ON]
+    I --> J[Display: GO]
+    J --> K[Delay]
+
+    K --> L[Loop Back]
+    L --> C
+````
+
+---
+
+## 6. Code Structure (OOP Upgrade Version)
+
+To make the system more modular and professional, the design can be extended using Object-Oriented Programming:
+
+```cpp id="oop_version"
+class TrafficLight {
+private:
+    string state;
+
+public:
+    void setRed() {
+        state = "RED";
+        cout << "STOP" << endl;
+    }
+
+    void setYellow() {
+        state = "YELLOW";
+        cout << "WARNING" << endl;
+    }
+
+    void setGreen() {
+        state = "GREEN";
+        cout << "GO" << endl;
+    }
+
+    void runCycle() {
+        while (true) {
+            setRed();
+            // delay
+            setYellow();
+            // delay
+            setGreen();
+            // delay
+        }
+    }
+};
 ```
+
+---
+
+## 7. Sample Program Output
+
+````
+=============================
+ TRAFFIC LIGHT SIMULATION
+=============================
+
+[RED LIGHT]
+STOP - Vehicles must stop
+Waiting...
+
+[YELLOW LIGHT]
+WARNING - Prepare to stop or go
+Waiting...
+
+[GREEN LIGHT]
+GO - Vehicles may proceed
+Waiting...
+
+(repeats continuously)
+``` id="output_final"
+
+---
+
+## 8. Technology Stack
+
+- Language: C++
+- IDE: Visual Studio Code
+- Compiler: GCC / MinGW
+- Version Control: Git & GitHub
+
+---
+
+## 9. Project Structure
+
+````
 
 ngoding bersama wapres/
 ├── src/
@@ -68,54 +162,60 @@ ngoding bersama wapres/
 ├── README.md
 └── .gitignore
 
-```
+````id="structure_final"
 
 ---
 
-## Group Members
+## 10. Group Members
 
 - Ahmad Adzani Gibran (2510953018)  
 - Faruq Habibi (2510953014)  
 - Rangga Pramudya (2510953038)  
-- Nabila Nasywa Putri (2510953030)
+- Nabila Nasywa Putri (2510953030)  
 
 ---
 
-## Lecturers
+## 11. Lecturers
 
 - Dr. Darmawan, S.T., M.Sc  
-- Amirul Luthfi, S.T., M.T
+- Amirul Luthfi, S.T., M.T  
 
 ---
 
-## How to Run
+## 12. Build and Run Instructions
 
-Compile:
-```
-
+### Compile
+```bash
 g++ src/traffic_light.cpp -o traffic_light
+``` id="compile_final"
 
-```
-
-Run (Linux/Mac):
-```
-
-./traffic_light
-
-```
-
-Run (Windows):
-```
-
+### Run (Windows)
+```bash
 traffic_light.exe
+``` id="run_win_final"
 
-```
+### Run (Linux / macOS)
+```bash
+./traffic_light
+``` id="run_linux_final"
 
 ---
 
-## Conclusion
+## 13. Learning Outcomes
 
-This project demonstrates a simple traffic light simulation using C++. It helps in understanding basic programming logic and system modeling in a structured way.
-```
+- Implementation of sequential control systems in C++
+- Understanding real-world simulation modeling
+- Application of structured and object-oriented programming concepts
+- Experience using Git and GitHub for version control
+- Collaborative software development workflow
+
+---
+
+## 14. Conclusion
+
+This project demonstrates how a simple traffic light system can be modeled using programming concepts. It bridges theoretical learning with real-world simulation and introduces structured software engineering practices.
+
+The extended object-oriented design provides a foundation for more advanced systems such as adaptive traffic control and multi-intersection simulations.
+````
 
 ---
