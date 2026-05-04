@@ -1,163 +1,125 @@
-```markdown id="ai_free_readme"
+Baik. Masalahnya biasanya karena format Markdown terlalu “ramai” (garis, emoji, simbol, dan struktur terlalu padat). Berikut versi **README yang lebih clean, akademik, dan rapi untuk GitHub** tanpa berlebihan simbol.
+
+Silakan **replace seluruh README.md** dengan ini:
+
+```markdown id="clean_final_readme"
 # Traffic Light Simulation System (C++)
 
-## Course: Pemrograman 2 (Structured Programming / Object-Oriented Programming)
+## Course: Pemrograman 2
 
-This project was developed as a group assignment for the Pemrograman 2 course. The main purpose of this work is to implement a simple traffic light simulation using the C++ programming language and to demonstrate how basic programming logic can be applied to model a real-world system.
-
----
-
-## 1. Project Overview
-
-This program simulates the basic behavior of a traffic light system commonly found at road intersections. It represents the sequential switching between red, yellow, and green signals in a continuous cycle.
-
-Although simplified, the simulation reflects the core principle of traffic control systems, where each signal plays a role in regulating vehicle movement and maintaining road safety.
-
-The implementation is based on fundamental programming concepts such as selection structures, loops, and time-based execution control.
+This project is a group assignment for the Pemrograman 2 course. It demonstrates a simple simulation of a traffic light system using the C++ programming language.
 
 ---
 
-## 2. Project Objectives
+## Project Description
 
-The objectives of this project are as follows:
+This program simulates the basic behavior of a traffic light system at an intersection. It models the sequence of red, yellow, and green signals in a continuous loop.
 
-- To model a real-world traffic light system using C++
-- To apply basic programming concepts in a structured manner
-- To understand sequential program execution and control flow
-- To improve problem-solving skills through system simulation
-- To gain experience in collaborative software development
-- To practice using Git and GitHub for version control
+The simulation is designed to represent how traffic lights regulate vehicle movement in real-world conditions using simple programming logic.
 
 ---
 
-## 3. System Description
+## Objectives
 
-### 3.1 Traffic Light Behavior
+The objectives of this project are:
 
-The system simulates three main states:
-
-- **Red Light**: Indicates vehicles must stop  
-- **Yellow Light**: Indicates a transition or warning phase  
-- **Green Light**: Indicates vehicles are allowed to move  
-
-These states are executed repeatedly to simulate continuous traffic operation.
+- To simulate a traffic light system using C++
+- To apply basic programming concepts such as loops and conditions
+- To understand sequential program execution
+- To develop teamwork in software development
+- To practice version control using Git and GitHub
 
 ---
 
-### 3.2 Program Flow
+## System Features
 
-The logic of the system follows a fixed sequence:
+### Traffic Light Simulation
+The system includes three states:
 
-1. Red light is activated  
-2. Yellow light is activated  
-3. Green light is activated  
-4. The cycle repeats continuously  
+- Red light: vehicles must stop
+- Yellow light: warning transition
+- Green light: vehicles may proceed
 
-This sequence ensures a consistent simulation of traffic behavior.
+### Program Flow
+The sequence follows:
 
----
+1. Red light
+2. Yellow light
+3. Green light
+4. Repeat continuously
 
-### 3.3 Execution Method
-
-The program runs in a console environment. Time delays are used to simulate the duration of each traffic light state, allowing the system to behave in a more realistic manner.
-
----
-
-## 4. Tools and Technologies
-
-- Programming Language: C++  
-- Development Environment: Visual Studio Code  
-- Compiler: GCC / MinGW  
-- Version Control System: Git and GitHub  
+### Execution
+The program runs in the console and uses delays to simulate real-time traffic behavior.
 
 ---
 
-## 5. Project Structure
+## Technology Used
+
+- C++
+- Visual Studio Code
+- GCC / MinGW
+- Git and GitHub
+
+---
+
+## Project Structure
 
 ```
 
 ngoding bersama wapres/
-│
 ├── src/
 │   └── traffic_light.cpp
-│
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 
-```id="str1"
-
----
-
-## 6. Group Members
-
-This project was completed by:
-
-1. Ahmad Adzani Gibran (2510953018)  
-2. Faruq Habibi (2510953014)  
-3. Rangga Pramudya (2510953038)  
-4. Nabila Nasywa Putri (2510953030)  
-
----
-
-## 7. Lecturers
-
-- Dr. Darmawan, S.T., M.Sc  
-- Amirul Luthfi, S.T., M.T  
-
----
-
-## 8. How to Compile and Run
-
-### Compilation
 ```
 
-g++ "src/traffic_light.cpp" -o traffic_light
+---
 
-```id="run1"
+## Group Members
 
-### Execution (Linux / Mac)
+- Ahmad Adzani Gibran (2510953018)  
+- Faruq Habibi (2510953014)  
+- Rangga Pramudya (2510953038)  
+- Nabila Nasywa Putri (2510953030)
+
+---
+
+## Lecturers
+
+- Dr. Darmawan, S.T., M.Sc  
+- Amirul Luthfi, S.T., M.T
+
+---
+
+## How to Run
+
+Compile:
+```
+
+g++ src/traffic_light.cpp -o traffic_light
+
+```
+
+Run (Linux/Mac):
 ```
 
 ./traffic_light
 
-```id="run2"
+```
 
-### Execution (Windows)
+Run (Windows):
 ```
 
 traffic_light.exe
 
-```id="run3"
+```
 
 ---
 
-## 9. Learning Outcomes
+## Conclusion
 
-Through this project, the following skills and understanding were developed:
-
-- Implementation of control flow in C++
-- Understanding of sequential system design
-- Application of programming concepts to real-world problems
-- Familiarity with Git-based version control
-- Experience in collaborative project development
-
----
-
-## 10. Possible Improvements
-
-This simulation can be extended in the future by:
-
-- Adding multiple intersections
-- Implementing a graphical user interface
-- Introducing sensor-based adaptive traffic control
-- Applying object-oriented programming principles
-- Integrating real-time data processing
-
----
-
-## 11. Conclusion
-
-The Traffic Light Simulation System demonstrates how fundamental programming concepts can be used to model a real-world process in a simplified manner. The project provides practical experience in software development while reinforcing logical thinking and structured programming skills.
+This project demonstrates a simple traffic light simulation using C++. It helps in understanding basic programming logic and system modeling in a structured way.
 ```
 
 ---
